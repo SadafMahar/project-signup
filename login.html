@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div class="web">
+            <div class="form-box">
+                <h1>login</h1>
+                <form onsubmit="login(event)" >
+                    <input type="text" placeholder="inter your email" id="login_email">
+        <input type="password" name="" id="login_password">
+        <br>
+        <div class="box">
+        <button type="submit" class="btnn">login</button>
+        <button onclick="logout(event)" class="btnn">logout</button>
+        </div>
+       <br>
+        <div class="login-register">
+            <p>Don't have an account?<a href="users.html" class="register"> users Detail</a></p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+                </form> 
+                <script src="./index.js" defer></script>
+                <script src="script/firebast_db.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+                <script>
+                      const firebaseConfig = {
+                apiKey: "AIzaSyDyBsUZxP0Bi6FBe17DJxq0m3A67KVZIMU",
+                authDomain: "project-signup-login.firebaseapp.com",
+                projectId: "project-signup-login",
+                storageBucket: "project-signup-login.appspot.com",
+                messagingSenderId: "819900878616",
+                appId: "1:819900878616:web:8ac47d117073ef526d186d",
+                measurementId: "G-KN762X5VKV"
+              };
+            
+              // Initialize Firebase
+              firebase.initializeApp(firebaseConfig);
+            </script>
+</body>
+</html>
